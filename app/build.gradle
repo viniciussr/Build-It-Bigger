@@ -33,6 +33,10 @@ android {
     }
 }
 
+configurations {
+    all*.exclude group: 'com.google.guava', module:'guava-jdk5'
+}
+
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
     endpointsServer project(path: ':backend', configuration: 'endpoints')
@@ -47,6 +51,7 @@ dependencies {
     })
 
     testImplementation 'junit:junit:4.12'
-    compile project(':javalibJoke')
-    compile project(":androidlibjoke")
+    implementation project(':javalibJoke')
+    implementation project(":androidlibjoke")
+    implementation project(":backend")
 }

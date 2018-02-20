@@ -16,11 +16,30 @@
         android:text="@string/instructions" />
 
     <Button
+        android:id="@+id/joke1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@+id/instructions_text_view"
         android:onClick="tellJoke"
         android:text="@string/button_text" />
+
+    <Button
+        android:id="@+id/joke2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/joke1"
+        android:onClick="tellJokeApp"
+        android:text="@string/button_text_app" />
+
+    <Button
+        android:id="@+id/joke3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/joke2"
+        android:onClick="tellJokeAPI"
+        android:text="@string/button_text_api" />
+
+
 
     <com.google.android.gms.ads.AdView
         android:id="@+id/adView"
