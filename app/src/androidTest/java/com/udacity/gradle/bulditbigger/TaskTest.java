@@ -3,7 +3,6 @@ package com.udacity.gradle.bulditbigger;
 import android.content.Intent;
 import android.support.test.filters.LargeTest;
 import android.support.test.runner.AndroidJUnit4;
-import android.test.AndroidTestCase;
 import android.test.mock.MockContext;
 
 import com.udacity.gradle.builditbigger.task.EndpointsAsyncTask;
